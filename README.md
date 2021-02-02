@@ -12,7 +12,7 @@ POST https://boiling-refuge-66454.herokuapp.com/images/:imageId/comments - до�
 
 Дизайн можно найти <a href = 'https://www.figma.com/file/3VP0QDK3kjdfbkj8TRrtsx/Test-task?node-id=0%3A2'>тут</a>.
 
-Ответы на вопросы по заданию можно найти тут.​
+Ответы на вопросы по заданию можно найти <a href="mailto:varkadov@avito.ru">тут</a>.​
 
 Мы оценим если:
 
