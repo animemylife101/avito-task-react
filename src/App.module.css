@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Header {
+  padding-top: 2vh;
+  font-size: 7vh;
+}
+.ModalWindow {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.ModalWindowContent img {
+  width: 70vh;
+}
+.ModalWindowContent {
+  background-color: white;
+  padding: 4vh;
+  width: 100vh;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ModalWindowContentRightBlock {
+  margin-left: 3vh;
+  width: 26%;
+  word-break: break-all;
+  height: 47vh;
+  overflow-y: auto;
+}
+.ModalWindowClose {
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+.ModalWindowContentRightBlockItem {
+  margin: 2vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.ModalWindowContentRightBlockItem p {
+  margin: 0.8vh 0;
+}
+.ModalWindowContentRightBlockItem_date {
+  color: #999999;
+}
+.ModalWindowContentRightBlockItem_text {
+  color: black;
+}
+.ModalWindowContentLeftBlockForm {
+  display: flex;
+  flex-direction: column;
+}
+.ModalWindowContentLeftBlockFormInput {
+  padding-left: 1vh;
+  margin: 0.4vh 0;
+  height: 5vh;
+  outline: none;
+  border: 1px solid #CCCCCC;
+}
+.ModalWindowContentLeftBlockFormInputButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  font-size: 2vh;
+  border: none;
+  background-color: #4997D0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+.UnsuccesSuccesBlock {
+  margin: 1vh;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 2vh;
+  box-shadow: 5px 10px #888888;
+}
+.SuccesUnsuccesBlockText {
+  margin: 0;
+  margin-left: 4vh;
+  font-size: 2.2vh;
+  font-family: 'Roboto', sans-serif;
+}
+.UnsuccesBlock svg {
+  font-size: 3vh;
+}
+.SuccesSvg {
+  color: green;
+}
+.UnsuccesSvg {
+  color: red;
+}
+.CloseWindowIcon {
+  position: absolute;
+  width: 2.8vh;
+  right: 2%;
+  top: 3%;
+}
+.Main {
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  margin: 40px auto;
+  max-width: 70%;
+  padding: 4% 0;
+  margin: 0 auto;
+}
+.Footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+}
+.CloseWindowIcon {
+  cursor: pointer;
+}
+@media screen and (max-width: 115vh) {
+  .ModalWindowContent {
+    width: 85vh;
+  }
+  .ModalWindowContent img {
+    width: 60vh;
+  }
+}
+@media screen and (max-width: 100vh) {
+  .ModalWindowContent {
+    width: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+  }
+  .ModalWindowContent img {
+    width: 60vh;
+  }
+  .CloseWindowIcon {
+    top: 2%;
+  }
+  .ModalWindowContentRightBlock {
+    width: inherit;
+    margin-left: 0;
+  }
+  .ModalWindowContentRightBlock {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 78vh) {
+  .ModalWindowContent {
+    width: 50vh;
+  }
+  .ModalWindowContent img {
+    width: 50vh;
+  }
+  .CloseWindowIcon {
+    top: 1.4%;
+    width: 2.2vh;
+  }
+}
+@media screen and (max-width: 62vh) {
+  .ModalWindowContentRightBlock {
+    width: inherit;
+  }
+  .ModalWindowContent {
+    width: 44vh;
+  }
+  .ModalWindowContent img {
+    width: 43vh;
+  }
+}
